@@ -1,0 +1,192 @@
+body{
+font-family: "Space Grotesk", sans-serif;
+background-color: #FBF7F1;
+}
+
+main{
+    max-width: 1100px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin:80px auto;
+}
+
+.hero-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-end;
+
+}
+.left-section span{
+    text-transform: uppercase;
+    color: #C46644;
+    font-size: 14px;
+
+}
+.left-section h1{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+.right-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.right-section label{
+font-size: 14px;
+font-family: 600px;
+}
+.input-wrapper {
+  display: flex; 
+  gap: 10px; 
+}
+input{
+    flex: 1;
+    height: 50px;
+   border: 1.5px solid #D9CFC3;
+    border-radius: 5px; 
+  font-size: 1rem; 
+  padding: 0 18px;
+  border-radius: 10px;
+}
+button {
+  padding: 10px 20px; 
+  background-color: black; 
+  color: white;
+  border: none; 
+  border-radius: 5px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+}
+
+button:hover {
+  background-color: #45a049; 
+}
+.allergen-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 20px;
+    gap: 20px;
+}
+.photo-card{
+    background-color: white;
+    border: 1px solid #FBF7F1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.photo-card img{
+    width: 100% ;
+    height:200px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.photo-card h2 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.photo-card span , .photo-card h3 {
+    color:#756D67;
+    font-size: 16px;
+}
+.allergen-result{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.may-contains-cards , .not-listed-card{
+flex: 1;
+padding: 20px;
+border-radius: 16px;
+}
+.may-contain-not-listed-wrapper{
+    display: flex;
+    gap: 20px;
+}
+.contains-card {
+    padding: 20px 24px;
+    background-color: #FBE3DA;
+    border-radius: 18px;
+}
+.may-contains-cards {
+    background-color: #F8ECD4;
+}
+.not-listed-card{
+    background-color: #E4EFE2
+}
+.may-contain-not-listed-wrapper{
+    display: flex;
+    gap: 10px;
+}
+
+/* Flex them in a row (pill containers */
+.red-tag-container,
+.may-contains-tags,
+.not-contains-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Individual Pills */
+
+.red-tag,
+.yellow-tag,
+.green-tag {
+    display: inline-block;  /*makes it behave like. a biox and still sit in a line*/
+    border-radius: 999px; /*makes the pillshape*/
+    text-transform: capitalize;
+}
+
+.red-tag{
+    padding: 10px 18px;
+    background-color: #9A2F0C;
+    font-size: 20px;
+    color: white;
+}
+.green-tag {
+    background-color: white;
+    border: 1.5px solid #9CC39F;
+    color: #39663C;
+    padding: 8px 14px;
+
+}
+.yellow-tag{
+    background-color: white;
+    border: 1.5px solid #D9B26A;
+    color: #8D6324;
+    padding: 8px 14px;
+}
+.no-allergen {
+    margin: 0;
+    font-size: 15px;
+    font-style: italic;
+    color: #5A504A;
+}
+.ingredients-card{
+    padding: 24px 28px;
+    background-color: white;
+    border: 1px solid #EAE1D6;
+    border-radius: 18px;
+}
+#ingredients-list {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .hero-wrapper,
+    .allergen-wrapper,
+    .may-contain-not-listed-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
