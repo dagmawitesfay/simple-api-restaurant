@@ -127,7 +127,6 @@ border-radius: 16px;
     gap: 10px;
 }
 
-/* Flex them in a row (pill containers */
 .red-tag-container,
 .may-contains-tags,
 .not-contains-tags {
@@ -136,13 +135,11 @@ border-radius: 16px;
     gap: 8px;
 }
 
-/* Individual Pills */
-
 .red-tag,
 .yellow-tag,
 .green-tag {
-    display: inline-block;  /*makes it behave like. a biox and still sit in a line*/
-    border-radius: 999px; /*makes the pillshape*/
+    display: inline-block;  
+    border-radius: 999px; 
     text-transform: capitalize;
 }
 
