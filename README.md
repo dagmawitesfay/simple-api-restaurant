@@ -5,6 +5,7 @@ A lightweight front-end app that helps users check allergen information for pack
 ## Demo
 
 ![Allergen Check demo](image/Demo.png)
+https://dagmawitesfay.github.io/simple-api-restaurant/
 
 ## Features
 
